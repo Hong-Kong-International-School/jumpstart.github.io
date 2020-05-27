@@ -1,8 +1,9 @@
 html { font-size: 22px; }
 body { 
-	padding: 1rem; 
 	font-family: verdana;
 	font-weight: 4px;
+	margin: 0;
+	padding: 0;
 }
 
 .cards a:link {
@@ -32,16 +33,18 @@ body {
 	color: white;
 	padding: 1rem;
 	height: 4rem;
-	max-width: 600px;
+	max-width: 500px;
 	margin: 0 auto;
 	/*margin-top: 10px;*/
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	border-radius: 25px;
+	border: 2px solid #ffffff;
 }
 
 .cards {
-	max-width: 600px;
+	max-width: 800px;
 	margin: 0 auto;
 	display: grid;
 	grid-gap: 1rem;
@@ -51,15 +54,13 @@ body {
 @media (min-width: 600px) {
 	.cards { grid-template-columns: repeat(1, 1fr); }
 }
-/*
-@media (min-width: 600px) {
-	.cards { grid-template-columns: repeat(2, 1fr); }
-}*/
 
-.header {
+header{
+	display: block;
+	width: 100%;
+	background: #9d3334; /*HKIS RED*/
 	padding: 30px;
 	text-align: center;
-	background: #9d3334;
 	color: white;
 	font-size: 30px;
 	border-bottom: 20px solid #ffffff;
@@ -67,18 +68,10 @@ body {
 
 footer{
 	margin-top: 20px;
-	
-}
-
-.footer {
 	padding: 30px;
-	text-align: left;
-	background: #ffffff;
-	color: #0d2a51;
-	font-size: 15px;
-	border-top: 5px solid #0d2a51;
-}
-
-.colour{
-	color: #0d2a51; 
+		text-align: left;
+		background: #ffffff;
+		color: #0d2a51;
+		font-size: 15px;
+		border-top: 5px solid #0d2a51;
 }
